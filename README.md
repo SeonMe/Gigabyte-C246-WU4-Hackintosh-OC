@@ -68,7 +68,7 @@
 ![DeviceProperties_Edit](https://github.com/SeonMe/ASRock-Hackintosh-OC/raw/master/Images/DeviceProperties_Edit.png)
 
 ### BIOS Settings
-- **BIOS Version** 4.30
+- **BIOS Version** F5
 
 | Disabled | Enabled |
 |----|----|
