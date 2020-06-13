@@ -1,7 +1,7 @@
 # Gigabyte C246 WU4 Hackintosh on OpenCore
 
 ## macOS Versions
-#### macOS Catalina 10.15.4
+#### macOS Catalina 10.15.5
 
 ## SMBIOS
 #### iMac19,1
@@ -34,16 +34,16 @@
 #### Boot firmware
 | Boot  | Versions |
 |----|----|
-| OpenCore | [Latest release(0.5.7)](https://github.com/acidanthera/OpenCorePkg) |
+| OpenCore | [Latest release(0.5.9)](https://github.com/acidanthera/OpenCorePkg) |
 
 #### Kext
 | Kext | Downloads |
 |----|----|
-| Lilu | [Latest release(1.4.3)](https://github.com/acidanthera/Lilu) |
-| VirtualSMC,SMCProcessor,SMCSuperIO| [Latest release(1.1.2)](https://github.com/acidanthera/VirtualSMC) |
-| WhateverGreen | [Latest release(1.3.7)](https://github.com/bugprogrammer/WhateverGreen) Revision |
-| AppleALC | [Latest release(1.4.8)](https://github.com/acidanthera/AppleALC) |
-| IntelMausi | [Latest release(1.0.2)](https://github.com/acidanthera/IntelMausi) |
+| Lilu | [Latest release(1.4.5)](https://github.com/acidanthera/Lilu) |
+| VirtualSMC,SMCProcessor,SMCSuperIO| [Latest release(1.1.4)](https://github.com/acidanthera/VirtualSMC) |
+| WhateverGreen | [Latest release(1.4.0)](https://github.com/bugprogrammer/WhateverGreen) |
+| AppleALC | [Latest release(1.5.0)](https://github.com/acidanthera/AppleALC) |
+| IntelMausi | [Latest release(1.0.3)](https://github.com/acidanthera/IntelMausi) |
 | USBInjectAll | [Version: 2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads) |
 | USBPower | |
 | CPUFriend | [Latest release(1.2.0)](https://github.com/acidanthera/CPUFriend) |
@@ -76,6 +76,10 @@
 | VT-d | EHCI/XHCI Hand-off |
 | CSM | OS type: other types |
 ### Changelog
+
+#### 13/6 2020
+* Opencore version upgraded to 0.5.9
+* Kext all upgrade
 
 #### 7/6 2020
 * Initial release
