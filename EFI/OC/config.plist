@@ -144,7 +144,7 @@
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<string>onboard-2</string>
 				<key>layout-id</key>
 				<data>AQAAAA==</data>
 				<key>model</key>
@@ -154,6 +154,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Built-In</string>
+				<key>device-id</key>
+				<data>cKEAAA==</data>
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>hda-gfx</key>
@@ -178,8 +180,6 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Built-In</string>
-				<key>built-in</key>
-				<data>AQ==</data>
 				<key>device_type</key>
 				<string>Ethernet controller</string>
 				<key>model</key>
@@ -195,14 +195,6 @@
 				<string>Display controller</string>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
-				<key>device-id</key>
-				<data>mD4AAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 630</string>
 			</dict>
@@ -527,7 +519,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>darkwake=10 agdpmod=pikera shikigva=128 -v</string>
+				<string>darkwake=10 agdpmod=pikera shikigva=80 igfxfw=2 -v</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
