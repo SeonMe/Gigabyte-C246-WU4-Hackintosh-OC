@@ -12,7 +12,7 @@
 - **WIFI,Bluetooth** BCM94360CD Required
 - **AirDrop, Handoff** BCM94360CD Required
 - **USB** All USB3.1/USB2.0 Port
-- **Audio** Realtek ALC1220-VB, (layout id: 1)
+- **Audio** Realtek ALC1220-VB, (layout id: 1,PS: ApplcALC doesn't seem to support ALC1220-VB very well, it can make sound, but there will be very serious noise, so it is regarded as abnormal, if you use Bluetooth, this problem can be ignored.)
 - **iMessage,FaceTime,Siri** All work fine
 
 ### Not works
