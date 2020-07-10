@@ -61,11 +61,11 @@
 
 - **Use Tools:** Macserial
 
-![Where you need to modify](https://github.com/SeonMe/ASRock-Hackintosh-OC/raw/master/Images/1.png)
+![Where you need to modify](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/1.png)
 
 - **Use tools:** Hackintool > PCI
 
-![DeviceProperties_Edit](https://github.com/SeonMe/ASRock-Hackintosh-OC/raw/master/Images/2.png)
+![DeviceProperties_Edit](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/2.png)
 
 ### BIOS Settings
 - **BIOS Version** F5
