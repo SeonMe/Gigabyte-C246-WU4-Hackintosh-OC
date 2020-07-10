@@ -77,6 +77,9 @@
 | CSM | OS type: other types |
 ### Changelog
 
+#### 11/7 2020
+* delete SSDT-RTC-AWAC.aml,The SSDT is not needed, it will cause ACPI ERROR.
+
 #### 13/6 2020
 * Opencore version upgraded to 0.5.9
 * Kext all upgrade
