@@ -38,14 +38,6 @@
 				<key>Path</key>
 				<string>SSDT-PMCR.aml</string>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-RTC-AWAC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-RTC-AWAC.aml</string>
-			</dict>
 		</array>
 		<key>Block</key>
 		<array>
