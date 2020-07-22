@@ -22,7 +22,7 @@
 | Device | Model |
 |----|----|
 | MotherBoard | Gigabyte C246 WU4 |
-| CPU | Intel i5 9500 |
+| CPU | Intel Xeon E-2278G |
 | RAM | Asgard LOKI 51℃ 2666 8GB * 4 |
 | Video Card | Sapphire RX 5500XT 8GB |
 | Sound Card | Realtek ALC1220-VB （MotherBoard）|
@@ -76,6 +76,9 @@
 | VT-d | EHCI/XHCI Hand-off |
 | CSM | OS type: other types |
 ### Changelog
+
+#### 22/7 2020
+* replace CPU to Intel Xeon E-2278G
 
 #### 11/7 2020
 * delete SSDT-RTC-AWAC.aml,The SSDT is not needed, it will cause ACPI ERROR.
