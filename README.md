@@ -1,7 +1,7 @@
 # Gigabyte C246 WU4 Hackintosh on OpenCore
 
 ## macOS Versions
-#### macOS Catalina 10.15.5
+#### macOS Catalina 10.15.6
 
 ## SMBIOS
 #### iMac19,1
@@ -23,7 +23,7 @@
 |----|----|
 | MotherBoard | Gigabyte C246 WU4 |
 | CPU | Intel Xeon E-2278G |
-| RAM | Asgard LOKI 51℃ 2666 8GB * 4 |
+| RAM | Samsung 32GB DDR4-2666 ECC UDIMM * 4 |
 | Video Card | Sapphire RX 5500XT 8GB |
 | Sound Card | Realtek ALC1220-VB （MotherBoard）|
 | Network Interface Card | PCI-E BCM94360CD (WI-FI + Bluetooth) |
@@ -34,27 +34,26 @@
 #### Boot firmware
 | Boot  | Versions |
 |----|----|
-| OpenCore | [Latest release(0.5.9)](https://github.com/acidanthera/OpenCorePkg) |
+| OpenCore | [Latest release(0.6.0)](https://github.com/acidanthera/OpenCorePkg) |
 
 #### Kext
 | Kext | Downloads |
 |----|----|
-| Lilu | [Latest release(1.4.5)](https://github.com/acidanthera/Lilu) |
-| VirtualSMC,SMCProcessor,SMCSuperIO| [Latest release(1.1.4)](https://github.com/acidanthera/VirtualSMC) |
-| WhateverGreen | [Latest release(1.4.0)](https://github.com/bugprogrammer/WhateverGreen) |
-| AppleALC | [Latest release(1.5.0)](https://github.com/acidanthera/AppleALC) |
+| Lilu | [Latest release(1.4.6)](https://github.com/acidanthera/Lilu) |
+| VirtualSMC,SMCProcessor,SMCSuperIO| [Latest release(1.1.5)](https://github.com/acidanthera/VirtualSMC) |
+| WhateverGreen | [Latest release(1.4.1)](https://github.com/acidanthera/WhateverGreen) |
+| AppleALC | [Latest release(1.5.1)](https://github.com/acidanthera/AppleALC) |
 | IntelMausi | [Latest release(1.0.3)](https://github.com/acidanthera/IntelMausi) |
 | USBInjectAll | [Version: 2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads) |
 | USBPower | |
-| CPUFriend | [Latest release(1.2.0)](https://github.com/acidanthera/CPUFriend) |
+| CPUFriend | [Latest release(1.2.1)](https://github.com/acidanthera/CPUFriend) |
 
 #### EFI
 | EFI | Downloads |
 |----|----|
-| ApfsDriverLoader | [Latest release](https://github.com/acidanthera/AppleSupportPkg) |
 | HfsPlus | Latest release |
-| FwRuntimeServices | [Latest release](https://github.com/acidanthera/AppleSupportPkg) |
-| MemoryAllocation | [Latest release](https://github.com/williambj1/OpenCore-Factory/releases/tag/OpenCore-UEFI-Drivers) |
+| OpenCanopy | Latest release |
+| OpenRuntime | Latest release |
 
 
 ### Where you need to modify
@@ -77,15 +76,25 @@
 | CSM | OS type: other types |
 ### Changelog
 
-#### 22/7 2020
+#### 06/08 2020
+* Update macOS Version 10.15.6
+* Update OpenCore 0.6.0
+* Update Lilu 1.4.6
+* Update VirtualSMC,SMCProcessor,SMCSuperIO 1.1.5
+* Update WhateverGreen 1.4.1
+* Update AppleALC 1.5.1
+* Update CPUFriend 1.2.1
+* Delete ApfsDriverLoader.efi
+
+#### 22/07 2020
 * replace CPU to Intel Xeon E-2278G
 
-#### 11/7 2020
+#### 11/07 2020
 * delete SSDT-RTC-AWAC.aml,The SSDT is not needed, it will cause ACPI ERROR.
 
-#### 13/6 2020
+#### 13/06 2020
 * Opencore version upgraded to 0.5.9
 * Kext all upgrade
 
-#### 7/6 2020
+#### 07/06 2020
 * Initial release
