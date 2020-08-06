@@ -21,6 +21,7 @@
 ### Device Lists
 | Device | Model |
 |----|----|
+| Is Using |
 | MotherBoard | Gigabyte C246 WU4 |
 | CPU | Intel Xeon E-2278G |
 | RAM | Samsung 16GB DDR4-2666 ECC UDIMM * 4 |
@@ -29,6 +30,8 @@
 | Network Interface Card | PCI-E BCM94360CD (WI-FI + Bluetooth) |
 | Hard Disk | Hikvision C2000Pro 1TB NVMe SSD |
 | Case | Cooler Master S600 |
+| Planning |
+
 
 ### Software Version
 #### Boot firmware
