@@ -25,17 +25,11 @@
 | CPU | Intel Xeon E-2278G |
 | RAM | Samsung 16GB DDR4-2666 ECC UDIMM * 4 |
 | Video Card | Sapphire RX 5500XT 8GB |
+| FireWire Expansion Card | PCI 1394A+1394B FireWire 800 |
 | Sound Card | Realtek ALC1220-VB （MotherBoard）|
 | Network Interface Card | PCI-E BCM94360CD (WI-FI + Bluetooth) |
 | Hard Disk | Hikvision C2000Pro 1TB NVMe SSD |
 | Case | Cooler Master S600 |
-
-### Device being planned to be added
-| Device | Model |
-|----|----|
-| Optical network card | Chelsio T580-LP-CR 40GbE Unified Wire Adapter |
-| Thunderbolt-Card | Gigabyte GC-TITAN-RIDGE |
-| FireWire Expansion Card | PCI 1394A+1394B FireWire 800 |
 
 ### Software Version
 #### Boot firmware
