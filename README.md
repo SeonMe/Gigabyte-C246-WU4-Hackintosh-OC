@@ -40,7 +40,7 @@
 | OpenCore | [Latest release(0.6.0)](https://github.com/acidanthera/OpenCorePkg) |
 
 #### Kext
-| Kext | Downloads |
+| Kext | Versions |
 |----|----|
 | Lilu | [Latest release(1.4.6)](https://github.com/acidanthera/Lilu) |
 | VirtualSMC,SMCProcessor,SMCSuperIO| [Latest release(1.1.5)](https://github.com/acidanthera/VirtualSMC) |
@@ -51,8 +51,8 @@
 | USBPower | |
 | CPUFriend | [Latest release(1.2.1)](https://github.com/acidanthera/CPUFriend) |
 
-#### EFI
-| EFI | Downloads |
+#### Drivers
+| Drivers | Versions |
 |----|----|
 | HfsPlus | Latest release |
 | OpenCanopy | Latest release |
