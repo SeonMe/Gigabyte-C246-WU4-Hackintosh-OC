@@ -83,7 +83,7 @@
 * Update macOS Version To Big Sur Beta6
 * Update OpenCore 0.6.1
 * Update Kext To Latest Version
-* Add AMD Radeon RX 5500XT Performance Enhanced SSDT
+* Add AMD Radeon RX 5500XT [Performance Enhanced SSDT](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
 
 #### 06/08 2020
 * Update macOS Version 10.15.6
