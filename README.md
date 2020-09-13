@@ -27,7 +27,7 @@
 | Video Card | Sapphire RX 5500XT 8GB |
 | Sound Card | Realtek ALC1220-VB （MotherBoard）|
 | Network Interface Card | PCI-E BCM94360CD (WI-FI + Bluetooth) |
-| Optical network card | Chelsio T540-LP-CR 10GbE Unified Wire Adapter |
+| Optical network card | Gigabyte GC-10G82599-S |
 | Thunderbolt-Card | Gigabyte GC-TITAN-RIDGE |
 | FireWire Expansion Card | PCI 1394A+1394B FireWire 800 |
 | Hard Disk | Hikvision C2000Pro 1TB NVMe SSD |
