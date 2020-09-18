@@ -27,7 +27,7 @@
 | Video Card | Sapphire RX 5500XT 8GB |
 | Sound Card | Realtek ALC1220-VB （MotherBoard）|
 | Network Interface Card | PCI-E BCM94360CD (WI-FI + Bluetooth) |
-| Optical network card | Gigabyte GC-10G82599-S |
+| Optical network card | Gigabyte GC-10G82599-S (Not works)|
 | Thunderbolt-Card | Gigabyte GC-TITAN-RIDGE |
 | FireWire Expansion Card | PCI 1394A+1394B FireWire 800 |
 | Hard Disk | Hikvision C2000Pro 1TB NVMe SSD |
@@ -48,7 +48,6 @@
 | WhateverGreen | [Latest release(1.4.2)](https://github.com/acidanthera/WhateverGreen) |
 | AppleALC | [Latest release(1.5.2)](https://github.com/acidanthera/AppleALC) |
 | IntelMausi | [Latest release(1.0.3)](https://github.com/acidanthera/IntelMausi) |
-| SmallTreeIntel8259x | |
 | USBInjectAll | [Version: 2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads) |
 | USBPower | |
 | CPUFriend | [Latest release(1.2.1)](https://github.com/acidanthera/CPUFriend) |
