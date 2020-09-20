@@ -28,7 +28,7 @@
 | Sound Card | Realtek ALC1220-VB （MotherBoard）|
 | Network Interface Card | PCI-E BCM94360CD (WI-FI + Bluetooth) |
 | Optical Network Card | Intel X520-DA2 2-Port 10GbE FCoE SFP+ NIC |
-| Thunderbolt-Card | Gigabyte GC-TITAN-RIDGE |
+| Thunderbolt Card | Gigabyte GC-TITAN-RIDGE |
 | FireWire Expansion Card | PCI 1394A+1394B FireWire 800 |
 | Hard Disk | Hikvision C2000Pro 1TB NVMe SSD |
 | Case | Cooler Master S600 |
