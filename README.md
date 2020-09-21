@@ -49,6 +49,7 @@
 | AppleALC | [Latest release(1.5.2)](https://github.com/acidanthera/AppleALC) |
 | IntelMausi | [Latest release(1.0.3)](https://github.com/acidanthera/IntelMausi) |
 | SmallTreeIntel8259x | |
+| AirportBrcmFixup | [Latest release(2.0.9)](https://github.com/acidanthera/AirportBrcmFixup) |
 | USBInjectAll | [Version: 2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads) |
 | USBPower | |
 | CPUFriend | [Latest release(1.2.1)](https://github.com/acidanthera/CPUFriend) |
