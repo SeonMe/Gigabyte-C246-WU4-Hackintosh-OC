@@ -44,7 +44,6 @@
 |----|----|
 | Lilu | [Latest release(1.4.7)](https://github.com/acidanthera/Lilu) |
 | VirtualSMC,SMCProcessor,SMCSuperIO| [Latest release(1.1.6)](https://github.com/acidanthera/VirtualSMC) |
-| DAGPM | |
 | WhateverGreen | [Latest release(1.4.2)](https://github.com/acidanthera/WhateverGreen) |
 | AppleALC | [Latest release(1.5.2)](https://github.com/acidanthera/AppleALC) |
 | IntelMausi | [Latest release(1.0.3)](https://github.com/acidanthera/IntelMausi) |
@@ -89,7 +88,6 @@
 * Update macOS Version To Big Sur Beta6
 * Update OpenCore 0.6.1
 * Update Kext To Latest Version
-* Add AMD Radeon RX 5500XT [Performance Enhanced SSDT](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
 
 #### 06/08 2020
 * Update macOS Version 10.15.6
