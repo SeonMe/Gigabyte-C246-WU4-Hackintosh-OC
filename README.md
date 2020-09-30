@@ -23,7 +23,7 @@
 |----|----|
 | MotherBoard | Gigabyte C246 WU4 |
 | CPU | Intel Xeon E-2278G |
-| RAM | Samsung 16GB DDR4-2666 ECC * 4 |
+| RAM | Samsung 16GB DDR4 2666MHz ECC Memory Module * 4 |
 | Video Card | Sapphire RX 5500XT 8GB |
 | Sound Card | Realtek ALC1220-VB （MotherBoard）|
 | Network Interface Card | PCI-E BCM94360CD (WI-FI + Bluetooth) |
