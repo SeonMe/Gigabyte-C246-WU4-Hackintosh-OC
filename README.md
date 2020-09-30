@@ -1,7 +1,7 @@
 # Gigabyte C246 WU4 Hackintosh on OpenCore
 
 ## macOS Versions
-#### macOS Big Sur Beta6 (20A5364e)
+#### macOS Big Sur Beta8 (20A5374i)
 
 ## SMBIOS
 #### iMac19,1
