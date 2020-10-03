@@ -1,7 +1,7 @@
 # Gigabyte C246 WU4 Hackintosh on OpenCore
 
 ## macOS Versions
-#### macOS Big Sur Beta8 (20A5374i)
+#### macOS Big Sur Beta9 (20A5384c)
 
 ## SMBIOS
 #### iMac19,1
@@ -37,7 +37,7 @@
 #### Boot firmware
 | Boot  | Versions |
 |----|----|
-| OpenCore | [Latest release(0.6.1)](https://github.com/acidanthera/OpenCorePkg) |
+| OpenCore | [Latest release(0.6.2)](https://github.com/acidanthera/OpenCorePkg) |
 
 #### Kext
 | Kext | Versions |
@@ -65,7 +65,11 @@
 
 - **Use Tools:** Macserial
 
-![Where you need to modify](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/1.png)
+![](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/1.png)
+
+- **USB port customization (optional)**
+![](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/2.png)
+![](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/3.png)
 
 ### BIOS Settings
 - **BIOS Version** F5
@@ -76,6 +80,9 @@
 | VT-d | EHCI/XHCI Hand-off |
 | CSM | OS type: other types |
 ### Changelog
+
+#### 03/10 2020
+* Update OpenCore Version 0.6.2
 
 #### 20/9 2020
 * Add 10GB SFP+ network card and driver

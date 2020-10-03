@@ -146,33 +146,6 @@
 				<key>model</key>
 				<string>Intel HD Graphics P630</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>PCIe Solt-3</string>
-				<key>device_type</key>
-				<string>Ethernet controller</string>
-				<key>model</key>
-				<string>82599ES 10-Gigabit SFI/SFP+ Network Connection</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x1)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>PCIe Solt-3</string>
-				<key>device_type</key>
-				<string>Ethernet controller</string>
-				<key>model</key>
-				<string>82599ES 10-Gigabit SFI/SFP+ Network Connection</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>PCIe Solt-2</string>
-				<key>device_type</key>
-				<string>Network controller</string>
-				<key>model</key>
-				<string>BCM4360 802.11ac Wireless Network Adapter</string>
-			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
@@ -392,7 +365,7 @@
 				<key>BundlePath</key>
 				<string>System/Library/Extensions/IONetworkingFamily.kext</string>
 				<key>Comment</key>
-				<string>Patch engine</string>
+				<string></string>
 				<key>Enabled</key>
 				<false/>
 				<key>Identifier</key>
@@ -430,6 +403,8 @@
 			<false/>
 			<key>DummyPowerManagement</key>
 			<false/>
+			<key>ExtendBTFeatureFlags</key>
+			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
@@ -448,11 +423,11 @@
 		<key>Scheme</key>
 		<dict>
 			<key>FuzzyMatch</key>
-			<true/>
+			<false/>
 			<key>KernelArch</key>
 			<string>x86_64</string>
 			<key>KernelCache</key>
-			<string>Auto</string>
+			<string>Prelinked</string>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -477,7 +452,7 @@
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
-			<true/>
+			<false/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
@@ -532,7 +507,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -562,14 +537,14 @@
 				<data>Rg==</data>
 				<key>boot-args</key>
 				<string>darkwake=10 agdpmod=pikera shikigva=80 igfxfw=2 vsmcgen=1 -v</string>
-				<key>bootercfg</key>
-				<string>log=0 debug=0 level=0</string>
+				<key>run-efi-updater</key>
+				<string>No</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
-				<data>emgtSGFuczoyNTI=</data>
-				<key>run-efi-updater</key>
-				<string>No</string>
+				<data>cnUtUlU6MjUy</data>
+				<key>bootercfg</key>
+				<string>log=0 debug=0 level=0</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -605,8 +580,12 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<true/>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>MLB</key>
 			<string></string>
+			<key>ProcessorType</key>
+			<integer>3841</integer>
 			<key>ROM</key>
 			<data></data>
 			<key>SpoofVendor</key>
