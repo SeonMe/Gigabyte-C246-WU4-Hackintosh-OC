@@ -7,7 +7,7 @@
 #### iMac19,1
 
 ### What works
-- **dGPU** Hardware Accelaration (Final Cut Pro X, VideoProc, Compressor), DRM Content (Apple TV+/Safari Netflix/Amazon Prime)
+- **dGPU** Hardware Accelaration (Final Cut Pro X, VideoProc, Compressor)
 - **iGPU** Hardware Accelaration (Final Cut Pro X), Apple Sidecar
 - **WIFI,Bluetooth** BCM94360CD Required
 - **AirDrop, Handoff** BCM94360CD Required
@@ -16,7 +16,7 @@
 - **iMessage,FaceTime,Siri** All work fine
 
 ### Not works
-- Not
+- DRM Content (Apple TV+/Safari Netflix/Amazon Prime)
 
 ### Device Lists
 | Device | Model |
