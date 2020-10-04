@@ -77,13 +77,13 @@
 			<key>ProtectMemoryRegions</key>
 			<false/>
 			<key>ProtectSecureBoot</key>
-			<true/>
+			<false/>
 			<key>ProtectUefiServices</key>
-			<true/>
+			<false/>
 			<key>ProvideCustomSlide</key>
 			<true/>
 			<key>ProvideMaxSlide</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<false/>
 			<key>SetupVirtualMap</key>
@@ -124,6 +124,8 @@
 				<string>Built-In</string>
 				<key>device_type</key>
 				<string>Audio device</string>
+				<key>device-id</key>
+				<data>cKEAAA==</data>
 				<key>No-hda-gfx</key>
 				<data>AAAAAA==</data>
 				<key>layout-id</key>
@@ -268,13 +270,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>USBInjectAll.kext</string>
+				<string>USBPorts.kext</string>
 				<key>Comment</key>
-				<string>USBInjectAll</string>
+				<string>USBPorts</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBInjectAll</string>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -352,33 +354,19 @@
 		</array>
 		<key>Emulate</key>
 		<dict>
+			<key>DummyPowerManagement</key>
+			<false/>
 			<key>Cpuid1Data</key>
 			<data></data>
 			<key>Cpuid1Mask</key>
 			<data></data>
+			<key>MaxKernel</key>
+			<string></string>
+			<key>MinKernel</key>
+			<string></string>
 		</dict>
 		<key>Force</key>
 		<array>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>System/Library/Extensions/IONetworkingFamily.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>Identifier</key>
-				<string>com.apple.iokit.IONetworkingFamily</string>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IONetworkingFamily</string>
-				<key>MaxKernel</key>
-				<string>13.99.99</string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
@@ -401,8 +389,6 @@
 			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
-			<key>DummyPowerManagement</key>
-			<false/>
 			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
@@ -411,6 +397,8 @@
 			<false/>
 			<key>LapicKernelPanic</key>
 			<false/>
+			<key>LegacyCommpage</key>
+			<false/>
 			<key>PanicNoKextDump</key>
 			<false/>
 			<key>PowerTimeoutKernelPanic</key>
@@ -418,7 +406,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -452,7 +440,7 @@
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
-			<false/>
+			<true/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
@@ -493,7 +481,7 @@
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
 			<key>DmgLoading</key>
-			<string>Signed</string>
+			<string>Any</string>
 			<key>EnablePassword</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
@@ -536,7 +524,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>darkwake=10 agdpmod=pikera shikigva=80 igfxfw=2 vsmcgen=1 -v</string>
+				<string>darkwake=8 agdpmod=pikera shikigva=80 -v</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
@@ -579,13 +567,13 @@
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
-			<true/>
+			<false/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>MLB</key>
 			<string></string>
 			<key>ProcessorType</key>
-			<integer>3841</integer>
+			<integer>0</integer>
 			<key>ROM</key>
 			<data></data>
 			<key>SpoofVendor</key>

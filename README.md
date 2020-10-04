@@ -7,10 +7,7 @@
 #### iMac19,1
 
 ### What works
-- **dGPU** Hardware Accelaration (Final Cut Pro X, VideoProc, Compressor)
-- **iGPU** Hardware Accelaration (Final Cut Pro X), Apple Sidecar
-- **WIFI,Bluetooth** BCM94360CD Required
-- **AirDrop, Handoff** BCM94360CD Required
+- **WIFI,Bluetooth,AirDrop, Handoff** BCM94360CD Required
 - **USB** All USB3.1/USB2.0 Port
 - **Audio** Realtek ALC1220-VB, (layout id: 7)
 - **iMessage,FaceTime,Siri** All work fine
@@ -80,6 +77,9 @@
 | VT-d | EHCI/XHCI Hand-off |
 | CSM | OS type: other types |
 ### Changelog
+
+#### 05/10 2020
+* Repair sleep
 
 #### 03/10 2020
 * Update OpenCore Version 0.6.2
