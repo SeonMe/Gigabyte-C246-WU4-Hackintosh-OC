@@ -10,10 +10,11 @@
 - **WIFI,Bluetooth,AirDrop, Handoff** BCM94360CD Required
 - **USB** All USB3.1/USB2.0 Port
 - **Audio** Realtek ALC1220-VB, (layout id: 7)
-- **iMessage,FaceTime,Siri** All work fine
+- **Siri** work fine
 
 ### Not works
-- DRM Content (Apple TV+/Safari Netflix/Amazon Prime)
+- **DRM Content** Apple TV+/Safari Netflix/Amazon Prime
+- **iMessage,FaceTime** ??
 
 ### Device Lists
 | Device | Model |
