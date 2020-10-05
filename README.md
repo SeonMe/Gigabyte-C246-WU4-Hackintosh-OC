@@ -40,15 +40,15 @@
 #### Kext
 | Kext | Versions |
 |----|----|
-| Lilu | [Latest release(1.4.7)](https://github.com/acidanthera/Lilu) |
-| VirtualSMC,SMCProcessor,SMCSuperIO| [Latest release(1.1.6)](https://github.com/acidanthera/VirtualSMC) |
-| WhateverGreen | [Latest release(1.4.2)](https://github.com/acidanthera/WhateverGreen) |
-| AppleALC | [Latest release(1.5.2)](https://github.com/acidanthera/AppleALC) |
-| IntelMausi | [Latest release(1.0.3)](https://github.com/acidanthera/IntelMausi) |
+| Lilu | [Latest release(1.4.8)](https://github.com/acidanthera/Lilu) |
+| VirtualSMC,SMCProcessor,SMCSuperIO| [Latest release(1.1.7)](https://github.com/acidanthera/VirtualSMC) |
+| WhateverGreen | [Latest release(1.4.3)](https://github.com/acidanthera/WhateverGreen) |
+| AppleALC | [Latest release(1.5.3)](https://github.com/acidanthera/AppleALC) |
+| IntelMausi | [Latest release(1.0.4)](https://github.com/acidanthera/IntelMausi) |
 | SmallTreeIntel8259x | intel 82599ES Drive |
 | USBInjectAll | [Version: 2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads) |
 | USBPower | USB Powered |
-| CPUFriend | [Latest release(1.2.1)](https://github.com/acidanthera/CPUFriend) |
+| CPUFriend | [Latest release(1.2.2)](https://github.com/acidanthera/CPUFriend) |
 | CPUFriendDataProvider | CPU Frequency Conversion |
 
 #### Drivers
@@ -81,6 +81,7 @@
 
 #### 05/10 2020
 * Repair sleep
+* Update All Kext Version
 
 #### 03/10 2020
 * Update OpenCore Version 0.6.2
