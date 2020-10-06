@@ -4,17 +4,17 @@
 #### macOS Big Sur Beta9 (20A5384c)
 
 ## SMBIOS
-#### iMac19,1
+#### iMacPro1,1
 
 ### What works
 - **WIFI,Bluetooth,AirDrop, Handoff** BCM94360CD Required
 - **USB** All USB3.1/USB2.0 Port
 - **Audio** Realtek ALC1220-VB, (layout id: 7)
 - **Siri** Work fine
+- **DRM Content** Apple TV+/Safari Netflix/Amazon Prime
 
 ### Not works
 - **iMessage,FaceTime** ??
-- **DRM Content** Apple TV+/Safari Netflix/Amazon Prime
 
 ### Device Lists
 | Device | Model |
@@ -82,6 +82,7 @@
 #### 05/10 2020
 * Repair sleep
 * Update All Kext Version
+* Cange SMBIOS iMacPro1,1
 
 #### 03/10 2020
 * Update OpenCore Version 0.6.2
