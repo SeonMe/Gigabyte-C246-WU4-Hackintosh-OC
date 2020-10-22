@@ -1,20 +1,29 @@
 # Gigabyte C246 WU4 Hackintosh on OpenCore
 
 ## macOS Versions
-#### macOS Big Sur Beta9 (20A5384c)
+#### macOS Big Sur Beta10 (20A5395g)
 
 ## SMBIOS
-#### iMacPro1,1
+#### iMac19,1
 
 ### What works
 - **WIFI,Bluetooth,AirDrop, Handoff** BCM94360CD Required
 - **USB** All USB3.1/USB2.0 Port
 - **Audio** Realtek ALC1220-VB, (layout id: 7)
-- **Siri** Work fine
-- **DRM Content** Apple TV+/Safari Netflix/Amazon Prime
+- **Siri,iMessage,FaceTime** Work fine
+
+### DRM Content
+- **iMac19,1** Not works
+- **iMacPro1,1** Apple TV+/Safari Netflix/Amazon Prime
 
 ### Not works
-- **iMessage,FaceTime** ??
+- **NO**
+
+### How to use
+
+1.[Download EFI](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/archive/master.zip)
+
+2.[Look here](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html)
 
 ### Device Lists
 | Device | Model |
@@ -45,18 +54,19 @@
 | WhateverGreen | [Latest release(1.4.3)](https://github.com/acidanthera/WhateverGreen) |
 | AppleALC | [Latest release(1.5.3)](https://github.com/acidanthera/AppleALC) |
 | IntelMausi | [Latest release(1.0.4)](https://github.com/acidanthera/IntelMausi) |
-| SmallTreeIntel8259x | intel 82599ES Drive |
+| SmallTreeIntel8259x | [intel 82599ES Drive](https://small-tree.com/) |
 | USBInjectAll | [Version: 2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads) |
-| USBPower | USB Powered |
+| USBPower | USB Powered (iMac19,1)|
 | CPUFriend | [Latest release(1.2.2)](https://github.com/acidanthera/CPUFriend) |
 | CPUFriendDataProvider | CPU Frequency Conversion |
+| NVMeFix | [Latest release(1.0.4)](https://github.com/acidanthera/NVMeFix) |
 
 #### Drivers
 | Drivers | Versions |
 |----|----|
-| HfsPlus | Latest release |
-| OpenCanopy | Latest release |
-| OpenRuntime | Latest release |
+| HfsPlus | [Latest release](https://github.com/acidanthera/OcBinaryData) |
+| OpenCanopy | [Latest release](https://github.com/acidanthera/OpenCorePkg) |
+| OpenRuntime | [Latest release](https://github.com/acidanthera/OpenCorePkg) |
 
 
 ### Where you need to modify
@@ -65,7 +75,8 @@
 
 ![](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/1.png)
 
-- **USB port customization (optional)**
+### USB port customization (optional)
+
 ![](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/2.png)
 ![](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/3.png)
 
@@ -78,6 +89,9 @@
 | VT-d | EHCI/XHCI Hand-off |
 | CSM | OS type: other types |
 ### Changelog
+
+#### 23/10 2020
+* Add NVMeFix.kext
 
 #### 05/10 2020
 * Repair sleep
