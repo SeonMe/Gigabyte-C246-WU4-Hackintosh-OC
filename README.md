@@ -1,20 +1,17 @@
 # Gigabyte C246 WU4 Hackintosh on OpenCore
 
 ## macOS Versions
-#### macOS Big Sur Beta10 (20A5395g)
+#### macOS Big Sur Beta 11.0.1 (20B5022a)
 
 ## SMBIOS
-#### iMac19,1
+#### MacPro7,1
 
 ### What works
 - **WIFI,Bluetooth,AirDrop, Handoff** BCM94360CD Required
 - **USB** All USB3.1/USB2.0 Port
 - **Audio** Realtek ALC1220-VB, (layout id: 7)
 - **Siri,iMessage,FaceTime** Work fine
-
-### DRM Content
-- **iMac19,1** Not works
-- **iMacPro1,1** Apple TV+/Safari Netflix/Amazon Prime
+- **iMacPro1,1** Apple TV+/Safari Netflix(1080P)/Amazon Prime
 
 ### Not works
 - **NO**
@@ -44,19 +41,18 @@
 #### Boot firmware
 | Boot  | Versions |
 |----|----|
-| OpenCore | [Latest release(0.6.2)](https://github.com/acidanthera/OpenCorePkg) |
+| OpenCore | [Latest release(0.6.3)](https://github.com/acidanthera/OpenCorePkg) |
 
 #### Kext
 | Kext | Versions |
 |----|----|
-| Lilu | [Latest release(1.4.8)](https://github.com/acidanthera/Lilu) |
-| VirtualSMC,SMCProcessor,SMCSuperIO| [Latest release(1.1.7)](https://github.com/acidanthera/VirtualSMC) |
-| WhateverGreen | [Latest release(1.4.3)](https://github.com/acidanthera/WhateverGreen) |
-| AppleALC | [Latest release(1.5.3)](https://github.com/acidanthera/AppleALC) |
+| Lilu | [Latest release(1.4.9)](https://github.com/acidanthera/Lilu) |
+| FakeSMC,ACPISensors,CPUSensors,GPUSensors,LPCSensors | [Releases](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) |
+| AppleALC | [Latest release(1.5.4)](https://github.com/acidanthera/AppleALC) |
 | IntelMausi | [Latest release(1.0.4)](https://github.com/acidanthera/IntelMausi) |
 | SmallTreeIntel8259x | [intel 82599ES Drive](https://small-tree.com/) |
 | USBInjectAll | [Version: 2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads) |
-| USBPower | USB Powered (iMac19,1)|
+| USBPower | USB Powered (MacPro7,1)|
 | CPUFriend | [Latest release(1.2.2)](https://github.com/acidanthera/CPUFriend) |
 | CPUFriendDataProvider | CPU Frequency Conversion |
 | NVMeFix | [Latest release(1.0.4)](https://github.com/acidanthera/NVMeFix) |
@@ -89,6 +85,13 @@
 | VT-d | EHCI/XHCI Hand-off |
 | CSM | OS type: other types |
 ### Changelog
+
+#### 10/11 2020
+* Delete WhateverGreen.kext
+* Add FakeSMC
+* Change SMBIOS to MacPro7,1
+* Update All Kext Latest Release
+* Update OC 0.6.3
 
 #### 23/10 2020
 * Add NVMeFix.kext

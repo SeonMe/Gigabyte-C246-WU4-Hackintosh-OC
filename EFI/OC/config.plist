@@ -160,25 +160,83 @@
 				<string>Audio device</string>
 				<key>layout-id</key>
 				<data>BwAAAA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
 				<key>model</key>
 				<string>Realtek ALC1220-VB Audio Codec</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>AwCYPg==</data>
 				<key>AAPL,slot-name</key>
-				<string>Built-In</string>
-				<key>device-id</key>
-				<data>mz4AAA==</data>
+				<string>PCIe Solt-3</string>
 				<key>device_type</key>
-				<string>Display controller</string>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>82599ES 10-Gigabit SFI/SFP+ Network Connection</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCIe Solt-3</string>
+				<key>device_type</key>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>82599ES 10-Gigabit SFI/SFP+ Network Connection</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCIe Solt-2</string>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>model</key>
+				<string>BCM4360 802.11ac Wireless Network Adapter</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCIe Slot-1</string>
+				<key>@0,ATY,EFIDisplay</key>
+				<string>DP1</string>
+				<key>@0,name</key>
+				<string>ATY,Python</string>
+				<key>@0,AAPL,boot-display</key>
+				<data>AQAAAA==</data>
+				<key>@0,av-signal-type</key>
+				<data>EAAAAA==</data>
+				<key>ATY,EFIEnabledMode</key>
+				<data>AQ==</data>
+				<key>ATY,EFIVersion</key>
+				<data>MDEuMDEuMTgz</data>
+				<key>ATY,EFIVersionB</key>
+				<data>MTEzLTE0MjExTUUtVTEz</data>
+				<key>ATY,EFIBootMode</key>
+				<data>AAABAAEAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAAAAAEAAAADAAAAcE9DFgAAAAAADAAAAAcAAFAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAAgAAAAgAAAAASkAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAAAAAEAAAADAAAAcE9DFgAAAAAADgAAwAgAAFAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAAgAAAAgAAAAASkAAAAIAAAAAAA=</data>
+				<key>ATY,copyright</key>
+				<data>Q29weXJpZ2h0IEFNRCBJbmMuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIDIwMDUtMjAxOQ==</data>
+				<key>ATY,DeviceName</key>
+				<string>W5500X</string>
+				<key>ATY,FamilyName</key>
+				<string>Radeon Rro</string>
 				<key>hda-gfx</key>
 				<string>onboard-2</string>
+				<key>device_type</key>
+				<string>GPU controller</string>
 				<key>model</key>
-				<string>Intel HD Graphics P630</string>
+				<string>Radeon Rro W5500X</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCIe Slot-1</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-2</string>
+				<key>layout-id</key>
+				<data>AQAAAA==</data>
+				<key>model</key>
+				<string>AMD High Definition Audio Device</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -206,13 +264,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VirtualSMC.kext</string>
+				<string>FakeSMC.kext</string>
 				<key>Comment</key>
-				<string>VirtualSMC</string>
+				<string>FakeSMC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VirtualSMC</string>
+				<string>Contents/MacOS/FakeSMC</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -222,13 +280,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>SMCProcessor.kext</string>
+				<string>ACPISensors.kext</string>
 				<key>Comment</key>
-				<string>SMCProcessor</string>
+				<string>ACPISensors</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCProcessor</string>
+				<string>Contents/MacOS/ACPISensors</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -238,13 +296,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>SMCSuperIO.kext</string>
+				<string>CPUSensors.kext</string>
 				<key>Comment</key>
-				<string>SMCSuperIO</string>
+				<string>CPUSensors</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCSuperIO</string>
+				<string>Contents/MacOS/CPUSensors</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -254,13 +312,45 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>WhateverGreen.kext</string>
+				<string>GPUSensors.kext</string>
 				<key>Comment</key>
-				<string>Video card</string>
+				<string>GPUSensors</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/WhateverGreen</string>
+				<string>Contents/MacOS/GPUSensors</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>LPCSensors.kext</string>
+				<key>Comment</key>
+				<string>LPCSensors</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/LPCSensors</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>SMMSensors.kext</string>
+				<key>Comment</key>
+				<string>SMMSensors</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/SMMSensors</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -407,13 +497,43 @@
 		</array>
 		<key>Patch</key>
 		<array>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Base</key>
+				<string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
+				<key>Comment</key>
+				<string>Disable RTC wake scheduling</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data></data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleRTC</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>19.0.0</string>
+				<key>Replace</key>
+				<data>ww==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -561,13 +681,13 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>darkwake=8 agdpmod=pikera shikigva=80 -v</string>
+				<string>darkwake=10 -v</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
-				<data>/w8AAA==</data>
+				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
-				<data>emgtSGFuczoyNTI=</data>
+				<data></data>
 				<key>bootercfg</key>
 				<string>log=0 debug=0 level=0</string>
 			</dict>
@@ -601,6 +721,8 @@
 	<dict>
 		<key>Automatic</key>
 		<true/>
+		<key>CustomMemory</key>
+		<true/>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
@@ -610,17 +732,253 @@
 			<key>MLB</key>
 			<string></string>
 			<key>ProcessorType</key>
-			<integer>3841</integer>
+			<integer>3842</integer>
 			<key>ROM</key>
 			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
 			<string></string>
 			<key>SystemUUID</key>
 			<string></string>
+		</dict>
+		<key>Memory</key>
+		<dict>
+			<key>DataWidth</key>
+			<integer>64</integer>
+			<key>ErrorCorrection</key>
+			<integer>3</integer>
+			<key>FormFactor</key>
+			<integer>9</integer>
+			<key>MaxCapacity</key>
+			<integer>137438953472</integer>
+			<key>TotalWidth</key>
+			<integer>64</integer>
+			<key>Type</key>
+			<integer>26</integer>
+			<key>TypeDetail</key>
+			<integer>128</integer>
+			<key>Devices</key>
+			<array>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 1</string>
+					<key>DeviceLocator</key>
+					<string>(Channel A - DIMM 1)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00008-4GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000008</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 2</string>
+					<key>DeviceLocator</key>
+					<string>(Channel A - DIMM 2)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00007-4GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000007</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 3</string>
+					<key>DeviceLocator</key>
+					<string>(Channel B - DIMM 1)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00010-2GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000010</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 4</string>
+					<key>DeviceLocator</key>
+					<string>(Channel B - DIMM 2)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00009-2GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000009</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 5</string>
+					<key>DeviceLocator</key>
+					<string>(Channel C - DIMM 1)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00012-2GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000012</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 6</string>
+					<key>DeviceLocator</key>
+					<string>(Channel C - DIMM 2)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00011-2GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000011</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 7</string>
+					<key>DeviceLocator</key>
+					<string>(Channel D - DIMM 1)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00005-4GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000005</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 8</string>
+					<key>DeviceLocator</key>
+					<string>(Channel D - DIMM 2)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00006-4GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000006</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 9</string>
+					<key>DeviceLocator</key>
+					<string>(Channel E - DIMM 1)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00003-2GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000003</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 10</string>
+					<key>DeviceLocator</key>
+					<string>(Channel E - DIMM 2)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00004-2GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000004</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 11</string>
+					<key>DeviceLocator</key>
+					<string>(Channel F - DIMM 1)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00001-2GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000001</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+				<dict>
+					<key>AssetTag</key>
+					<string></string>
+					<key>BankLocator</key>
+					<string>Slot 12</string>
+					<key>DeviceLocator</key>
+					<string>(Channel F - DIMM 2)</string>
+					<key>Manufacturer</key>
+					<string>Apple Inc.</string>
+					<key>PartNumber</key>
+					<string>M00002-2GB</string>
+					<key>SerialNumber</key>
+					<string>AAA000000002</string>
+					<key>Size</key>
+					<integer>131072</integer>
+					<key>Speed</key>
+					<integer>2933</integer>
+				</dict>
+			</array>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
