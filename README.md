@@ -1,7 +1,7 @@
 # Gigabyte C246 WU4 Hackintosh on OpenCore
 
 ## macOS Versions
-#### macOS Big Sur Beta 11.0.1 (20B5022a)
+#### macOS Big Sur 11.0.1
 
 ## SMBIOS
 #### MacPro7,1
@@ -11,7 +11,7 @@
 - **USB** All USB3.1/USB2.0 Port
 - **Audio** Realtek ALC1220-VB, (layout id: 7)
 - **Siri,iMessage,FaceTime** Work fine
-- **iMacPro1,1** Apple TV+/Safari Netflix(1080P)/Amazon Prime
+- **DRM** Apple TV+/Safari Netflix(1080P)/Amazon Prime
 
 ### Not works
 - **NO**
