@@ -8,19 +8,27 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-DMAC</string>
+				<string>SSDT-DTGP</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
-				<string>SSDT-DMAC.aml</string>
+				<string>SSDT-DTGP.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-MEM2</string>
+				<string>SSDT-TB3</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-TB3.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-PMC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-MEM2.aml</string>
+				<string>SSDT-PMC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -40,8 +48,7 @@
 			</dict>
 		</array>
 		<key>Delete</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -52,23 +59,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>R1BSVwI=</data>
+				<data>
+				R1BSVwI=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>WFBSVwI=</data>
+				<data>
+				WFBSVwI=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>
+				</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -88,10 +103,13 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array>
-		</array>
+		<array/>
+		<key>Patch</key>
+		<array/>
 		<key>Quirks</key>
 		<dict>
+			<key>AllowRelocationBlock</key>
+			<false/>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -106,6 +124,8 @@
 			<true/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
+			<key>ForceBooterSignature</key>
+			<false/>
 			<key>ForceExitBootServices</key>
 			<false/>
 			<key>ProtectMemoryRegions</key>
@@ -125,43 +145,90 @@
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
 			<dict>
+				<key>@0,AAPL,boot-display</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>@0,ATY,EFIDisplay</key>
+				<string>DP1</string>
+				<key>@0,av-signal-type</key>
+				<data>
+				EAAAAA==
+				</data>
+				<key>@0,name</key>
+				<string>ATY,Python</string>
 				<key>AAPL,slot-name</key>
-				<string>Built-In</string>
+				<string>PCIe Slot-1</string>
+				<key>ATY,DeviceName</key>
+				<string>W5500X</string>
+				<key>ATY,EFIBootMode</key>
+				<data>
+				AAABAAEAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAABAAEAAAAAAAEAAAADAAAAcE9DFgAAAAAA
+				DAAAAAcAAFAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAAgA
+				AAAgAAAAASkAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAABAAEAAAAAAAEAAAADAAAAcE9DFgAA
+				AAAADgAAwAgAAFAAAAAAAAAAAAAAADcAAAAAAAAAAAAA
+				AAgAAAAgAAAAASkAAAAIAAAAAAA=
+				</data>
+				<key>ATY,EFIEnabledMode</key>
+				<data>
+				AQ==
+				</data>
+				<key>ATY,EFIVersion</key>
+				<data>
+				MDEuMDEuMTgz
+				</data>
+				<key>ATY,EFIVersionB</key>
+				<data>
+				MTEzLTE0MjExTUUtVTEz
+				</data>
+				<key>ATY,FamilyName</key>
+				<string>Radeon Rro</string>
+				<key>ATY,copyright</key>
+				<data>
+				Q29weXJpZ2h0IEFNRCBJbmMuIEFsbCBSaWdodHMgUmVz
+				ZXJ2ZWQuIDIwMDUtMjAxOQ==
+				</data>
 				<key>device_type</key>
-				<string>Ethernet controller</string>
+				<string>GPU controller</string>
+				<key>hda-gfx</key>
+				<string>onboard-2</string>
 				<key>model</key>
-				<string>Intel I210 Ethernet Adapter</string>
+				<string>Radeon Rro W5500X</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x6)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x1)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Built-In</string>
-				<key>device_type</key>
-				<string>Ethernet controller</string>
-				<key>model</key>
-				<string>Intel I219-LM Ethernet Adapter</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built-In</string>
-				<key>device-id</key>
-				<data>cKEAAA==</data>
+				<string>PCIe Slot-1</string>
 				<key>device_type</key>
 				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-2</string>
 				<key>layout-id</key>
-				<data>BwAAAA==</data>
+				<data>
+				AQAAAA==
+				</data>
 				<key>model</key>
-				<string>Realtek ALC1220-VB Audio Codec</string>
+				<string>AMD High Definition Audio Device</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)</key>
 			<dict>
@@ -176,12 +243,14 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>PCIe Solt-3</string>
+				<key>built-in</key>
+				<data>
+				AQ==
+				</data>
 				<key>device_type</key>
 				<string>Ethernet controller</string>
 				<key>model</key>
 				<string>82599ES 10-Gigabit SFI/SFP+ Network Connection</string>
-				<key>built-in</key>
-				<data>AQ==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
 			<dict>
@@ -192,51 +261,36 @@
 				<key>model</key>
 				<string>BCM4360 802.11ac Wireless Network Adapter</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1D,0x2)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>PCIe Slot-1</string>
-				<key>@0,ATY,EFIDisplay</key>
-				<string>DP1</string>
-				<key>@0,name</key>
-				<string>ATY,Python</string>
-				<key>@0,AAPL,boot-display</key>
-				<data>AQAAAA==</data>
-				<key>@0,av-signal-type</key>
-				<data>EAAAAA==</data>
-				<key>ATY,EFIEnabledMode</key>
-				<data>AQ==</data>
-				<key>ATY,EFIVersion</key>
-				<data>MDEuMDEuMTgz</data>
-				<key>ATY,EFIVersionB</key>
-				<data>MTEzLTE0MjExTUUtVTEz</data>
-				<key>ATY,EFIBootMode</key>
-				<data>AAABAAEAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAAAAAEAAAADAAAAcE9DFgAAAAAADAAAAAcAAFAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAAgAAAAgAAAAASkAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAAAAAEAAAADAAAAcE9DFgAAAAAADgAAwAgAAFAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAAgAAAAgAAAAASkAAAAIAAAAAAA=</data>
-				<key>ATY,copyright</key>
-				<data>Q29weXJpZ2h0IEFNRCBJbmMuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIDIwMDUtMjAxOQ==</data>
-				<key>ATY,DeviceName</key>
-				<string>W5500X</string>
-				<key>ATY,FamilyName</key>
-				<string>Radeon Rro</string>
-				<key>hda-gfx</key>
-				<string>onboard-2</string>
+				<string>Built-In</string>
 				<key>device_type</key>
-				<string>GPU controller</string>
+				<string>Ethernet controller</string>
 				<key>model</key>
-				<string>Radeon Rro W5500X</string>
+				<string>Intel I210 Ethernet Adapter</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x1)</key>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>PCIe Slot-1</string>
+				<string>Built-In</string>
 				<key>device_type</key>
 				<string>Audio device</string>
-				<key>hda-gfx</key>
-				<string>onboard-2</string>
 				<key>layout-id</key>
-				<data>AQAAAA==</data>
+				<data>
+				BwAAAA==
+				</data>
 				<key>model</key>
-				<string>AMD High Definition Audio Device</string>
+				<string>Realtek ALC1220-VB Audio Codec</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x6)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built-In</string>
+				<key>device_type</key>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>Intel I219-LM Ethernet Adapter</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -264,13 +318,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>FakeSMC.kext</string>
+				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string>FakeSMC</string>
+				<string>VirtualSMC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/FakeSMC</string>
+				<string>Contents/MacOS/VirtualSMC</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -280,13 +334,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>ACPISensors.kext</string>
+				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
-				<string>ACPISensors</string>
+				<string>SMCSuperIO</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/ACPISensors</string>
+				<string>Contents/MacOS/SMCSuperIO</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -296,61 +350,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>CPUSensors.kext</string>
+				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
-				<string>CPUSensors</string>
+				<string>SMCProcessor</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/CPUSensors</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>GPUSensors.kext</string>
-				<key>Comment</key>
-				<string>GPUSensors</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/GPUSensors</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>LPCSensors.kext</string>
-				<key>Comment</key>
-				<string>LPCSensors</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/LPCSensors</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>SMMSensors.kext</string>
-				<key>Comment</key>
-				<string>SMMSensors</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMMSensors</string>
+				<string>Contents/MacOS/SMCProcessor</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -392,13 +398,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>USBInjectAll.kext</string>
+				<string>USBPorts.kext</string>
 				<key>Comment</key>
-				<string>USBInjectAll</string>
+				<string>USBPorts</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/USBInjectAll</string>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -488,13 +494,11 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-		</array>
+		<array/>
 		<key>Emulate</key>
 		<dict/>
 		<key>Force</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -509,21 +513,26 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Identifier</key>
 				<string>com.apple.driver.AppleRTC</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
 				<string>19.0.0</string>
 				<key>Replace</key>
-				<data>ww==</data>
+				<data>
+				ww==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -550,6 +559,8 @@
 			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
+			<key>ForceSecureBootScheme</key>
+			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
@@ -559,7 +570,9 @@
 			<key>PanicNoKextDump</key>
 			<false/>
 			<key>PowerTimeoutKernelPanic</key>
-			<false/>
+			<true/>
+			<key>SetApfsTrimTimeout</key>
+			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
@@ -578,8 +591,7 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -588,16 +600,22 @@
 			<string>Auto</string>
 			<key>HideAuxiliary</key>
 			<false/>
+			<key>LauncherOption</key>
+			<string>Disabled</string>
+			<key>LauncherPath</key>
+			<string>Default</string>
 			<key>PickerAttributes</key>
 			<integer>0</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PickerVariant</key>
+			<string>Auto</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
-			<true/>
+			<false/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
@@ -623,8 +641,7 @@
 			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
-		<array>
-		</array>
+		<array/>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -635,8 +652,8 @@
 			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
-			<key>BootProtect</key>
-			<string>Bootstrap</string>
+			<key>BlacklistAppleUpdate</key>
+			<true/>
 			<key>DmgLoading</key>
 			<string>Any</string>
 			<key>EnablePassword</key>
@@ -646,9 +663,11 @@
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>PasswordHash</key>
-			<data></data>
+			<data>
+			</data>
 			<key>PasswordSalt</key>
-			<data></data>
+			<data>
+			</data>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
@@ -657,8 +676,7 @@
 			<string>Optional</string>
 		</dict>
 		<key>Tools</key>
-		<array>
-		</array>
+		<array/>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
@@ -667,29 +685,39 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
 				<key>DefaultBackgroundColor</key>
-				<data>AAAAAA==</data>
+				<data>
+				AAAAAA==
+				</data>
 				<key>UIScale</key>
-				<data>AQ==</data>
+				<data>
+				AQ==
+				</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
 				<key>rtc-blacklist</key>
-				<data></data>
+				<data>
+				</data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>SystemAudioVolume</key>
-				<data>Rg==</data>
+				<data>
+				Rg==
+				</data>
 				<key>boot-args</key>
-				<string>darkwake=10 -v</string>
-				<key>run-efi-updater</key>
-				<string>No</string>
-				<key>csr-active-config</key>
-				<data>5wMAAA==</data>
-				<key>prev-lang:kbd</key>
-				<data></data>
+				<string>darkwake=8</string>
 				<key>bootercfg</key>
 				<string>log=0 debug=0 level=0</string>
+				<key>csr-active-config</key>
+				<data>
+				5wMAAA==
+				</data>
+				<key>prev-lang:kbd</key>
+				<data>
+				</data>
+				<key>run-efi-updater</key>
+				<string>No</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -727,16 +755,19 @@
 		<dict>
 			<key>AdviseWindows</key>
 			<true/>
-			<key>SystemMemoryStatus</key>
-			<string>Auto</string>
 			<key>MLB</key>
 			<string></string>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>ProcessorType</key>
 			<integer>3842</integer>
 			<key>ROM</key>
-			<data></data>
+			<data>
+			</data>
 			<key>SpoofVendor</key>
 			<true/>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
@@ -748,18 +779,6 @@
 		<dict>
 			<key>DataWidth</key>
 			<integer>64</integer>
-			<key>ErrorCorrection</key>
-			<integer>3</integer>
-			<key>FormFactor</key>
-			<integer>9</integer>
-			<key>MaxCapacity</key>
-			<integer>137438953472</integer>
-			<key>TotalWidth</key>
-			<integer>64</integer>
-			<key>Type</key>
-			<integer>26</integer>
-			<key>TypeDetail</key>
-			<integer>128</integer>
 			<key>Devices</key>
 			<array>
 				<dict>
@@ -776,7 +795,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000008</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>4096</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -794,7 +813,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000007</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>4096</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -812,7 +831,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000010</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>2048</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -830,7 +849,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000009</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>2048</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -848,7 +867,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000012</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>2048</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -866,7 +885,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000011</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>2048</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -884,7 +903,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000005</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>4096</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -902,7 +921,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000006</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>4096</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -920,7 +939,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000003</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>2048</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -938,7 +957,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000004</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>2048</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -956,7 +975,7 @@
 					<key>SerialNumber</key>
 					<string>AAA000000001</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>2048</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
@@ -974,11 +993,23 @@
 					<key>SerialNumber</key>
 					<string>AAA000000002</string>
 					<key>Size</key>
-					<integer>131072</integer>
+					<integer>2048</integer>
 					<key>Speed</key>
 					<integer>2933</integer>
 				</dict>
 			</array>
+			<key>ErrorCorrection</key>
+			<integer>3</integer>
+			<key>FormFactor</key>
+			<integer>9</integer>
+			<key>MaxCapacity</key>
+			<integer>137438953472</integer>
+			<key>TotalWidth</key>
+			<integer>64</integer>
+			<key>Type</key>
+			<integer>26</integer>
+			<key>TypeDetail</key>
+			<integer>128</integer>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -988,6 +1019,8 @@
 		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Create</string>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -1006,6 +1039,21 @@
 			<key>MinVersion</key>
 			<integer>0</integer>
 		</dict>
+		<key>AppleInput</key>
+		<dict>
+			<key>AppleEvent</key>
+			<string>Auto</string>
+			<key>CustomDelays</key>
+			<string>Auto</string>
+			<key>KeyInitialDelay</key>
+			<integer>50</integer>
+			<key>KeySubsequentDelay</key>
+			<integer>5</integer>
+			<key>PointerSpeedDiv</key>
+			<integer>1</integer>
+			<key>PointerSpeedMul</key>
+			<integer>1</integer>
+		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>AudioCodec</key>
@@ -1019,7 +1067,11 @@
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
+			<string>Auto</string>
+			<key>ResetTrafficClass</key>
 			<false/>
+			<key>SetupDelay</key>
+			<integer>0</integer>
 			<key>VolumeAmplifier</key>
 			<integer>0</integer>
 		</dict>
@@ -1037,8 +1089,6 @@
 			<false/>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
-			<key>KeyMergeThreshold</key>
-			<integer>2</integer>
 			<key>KeySupport</key>
 			<true/>
 			<key>KeySupportMode</key>
@@ -1059,6 +1109,10 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
+			<false/>
+			<key>ForceResolution</key>
+			<false/>
+			<key>GopPassThrough</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
@@ -1084,8 +1138,6 @@
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleDebugLog</key>
-			<false/>
-			<key>AppleEvent</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
@@ -1118,8 +1170,10 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
+			<key>ActivateHpetSupport</key>
+			<false/>
+			<key>DisableSecurityPolicy</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
@@ -1134,8 +1188,7 @@
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array>
-		</array>
+		<array/>
 	</dict>
 </dict>
 </plist>

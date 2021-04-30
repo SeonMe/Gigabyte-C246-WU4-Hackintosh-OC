@@ -1,7 +1,7 @@
 # Gigabyte C246 WU4 Hackintosh on OpenCore
 
 ## macOS Versions
-#### macOS Big Sur 11.0.1
+#### macOS Big Sur 11.3(20E232)
 
 ## SMBIOS
 #### MacPro7,1
@@ -27,12 +27,12 @@
 |----|----|
 | MotherBoard | Gigabyte C246 WU4 |
 | CPU | Intel Xeon E-2278G |
-| RAM | Samsung 16GB DDR4 2666MHz ECC Memory Module * 4 |
+| RAM | Samsung 8GB DDR4 2666MHz ECC Memory Module * 4 |
 | Video Card | Sapphire RX 5500XT 8GB |
 | Sound Card | Realtek ALC1220-VB （MotherBoard）|
 | Network Interface Card | PCI-E BCM94360CD (WI-FI + Bluetooth) |
 | Optical Network Card | Intel X520-DA2 2-Port 10GbE FCoE SFP+ NIC |
-| Thunderbolt Card | Gigabyte GC-TITAN-RIDGE |
+| Thunderbolt Card | Gigabyte GC-TITAN-RIDGE ver.1|
 | FireWire Expansion Card | PCI 1394A+1394B FireWire 800 |
 | Hard Disk | Hikvision C2000Pro 1TB NVMe SSD |
 | Case | Cooler Master S600 |
@@ -41,21 +41,21 @@
 #### Boot firmware
 | Boot  | Versions |
 |----|----|
-| OpenCore | [Latest release(0.6.3)](https://github.com/acidanthera/OpenCorePkg) |
+| OpenCore | [Latest release(0.6.8)](https://github.com/acidanthera/OpenCorePkg) |
 
 #### Kext
 | Kext | Versions |
 |----|----|
-| Lilu | [Latest release(1.4.9)](https://github.com/acidanthera/Lilu) |
-| FakeSMC,ACPISensors,CPUSensors,GPUSensors,LPCSensors | [Releases](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) |
-| AppleALC | [Latest release(1.5.4)](https://github.com/acidanthera/AppleALC) |
-| IntelMausi | [Latest release(1.0.4)](https://github.com/acidanthera/IntelMausi) |
+| Lilu | [Latest release(1.5.2)](https://github.com/acidanthera/Lilu) |
+| VirtualSMC,SMCSuperIO,SMCProcessor | [Latest releases(1.2.2)](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) |
+| AppleALC | [Latest release(1.5.9)](https://github.com/acidanthera/AppleALC) |
+| IntelMausi | [Latest release(1.0.5)](https://github.com/acidanthera/IntelMausi) |
 | SmallTreeIntel8259x | [intel 82599ES Drive](https://small-tree.com/) |
-| USBInjectAll | [Version: 2018-1108](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/?tab=downloads) |
+| USBPorts | Custom made |
 | USBPower | USB Powered (MacPro7,1)|
-| CPUFriend | [Latest release(1.2.2)](https://github.com/acidanthera/CPUFriend) |
+| CPUFriend | [Latest release(1.2.3)](https://github.com/acidanthera/CPUFriend) |
 | CPUFriendDataProvider | CPU Frequency Conversion |
-| NVMeFix | [Latest release(1.0.4)](https://github.com/acidanthera/NVMeFix) |
+| NVMeFix | [Latest release(1.0.6)](https://github.com/acidanthera/NVMeFix) |
 
 #### Drivers
 | Drivers | Versions |
@@ -85,6 +85,11 @@
 | VT-d | EHCI/XHCI Hand-off |
 | CSM | OS type: other types |
 ### Changelog
+
+#### 30/5 2021
+* Update OpenCore Version 0.6.8
+* Delete FakeSMC
+* Add VirtualSMC
 
 #### 10/11 2020
 * Delete WhateverGreen.kext
