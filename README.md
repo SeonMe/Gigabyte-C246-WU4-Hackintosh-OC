@@ -75,6 +75,7 @@
 
 ![](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/2.png)
 ![](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/3.png)
+![](https://github.com/SeonMe/Gigabyte-C246-WU4-Hackintosh-OC/raw/master/Images/4.png)
 
 ### BIOS Settings
 - **BIOS Version** F5
